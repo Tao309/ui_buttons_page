@@ -1,0 +1,143 @@
+/*Основной файл со стилямя*/
+html,body{margin:0px;padding:0px;font-size:12px;color:#1A1A18;/*overflow-x:hidden;*/
+font-family: Verdana, Sans-Serif,Arial;background:#e7e7e5;height:100%;}
+/*
+@media screen and (max-width:500px) {body {font-size:.8em;}}
+*/
+a {text-decoration:none;color:#000;border:none;}
+a:hover {cursor:pointer;}
+p {font-size:12px;}
+form,dl,dt,dd,a{margin:0;padding:0;border:0;border:none;}
+table,td,th,img {border:none;padding:0;margin:0;}
+button,
+select,
+textarea,
+input {outline:none;}
+button {border:none;background:none;padding:0;margin:0;}
+button:hover {cursor:pointer;}
+button:disabled {opacity:0.7;}
+h1,h2,h3,h4,h5,h6 {font-size:12px;padding:0;margin:0;}
+
+/*Настройки для мобильных сред - НАЧАЛО*/
+* {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {outline: none;
+width:100%;height:100%;
+-webkit-touch-callout: none;
+-webkit-text-size-adjust:none;
+-webkit-user-select:none;
+-webkit-focus-ring-color: rgba(0,0,0,0);
+}
+input, textarea {resize: none;-webkit-user-select: text;}
+/*Настройки для мобильных сред - КОНЕЦ*/
+
+/*Тело сайта - НАЧАЛО*/
+#body {text-align:center;height:100%;padding:0;margin:0;cursor:default;}
+#mainbody {text-align:left;display:inline-block;padding:0px;margin:0;width:100%;max-width:990px;background:#fff;
+min-height: 100%;height:auto !important; /*height: 100%!important;*/
+		box-sizing: border-box;
+-webkit-box-sizing: border-box;
+		box-shadow:0px 0 60px 4px #686868;
+-webkit-box-shadow:0px 0 60px 4px #686868;
+}
+#m-header,#m-center,#m-footer {text-align:center;padding:0px;cursor:default;display:block;height:100%;1background:#FAF7F4;}
+
+/**************************************************/
+
+/*
+Используемые цвета:
+
+
+*/
+
+#m-center {padding:20px;text-align:left;}
+#m-center>button {margin:4px;}
+
+.menu_button {display:inline-block;width:40px;height:40px;}
+.menu_button>span {position:relative;}
+.menu_button>span:before,
+.menu_button>span:after {position:absolute;content:'';left:0;}
+.menu_button>span,
+.menu_button>span:before,
+.menu_button>span:after {display:inline-block;width:100%;height:6px;background:#000;
+		border-radius:2px;
+-webkit-border-radius:2px;
+		transition:300ms;
+-webkit-transition:300ms;
+}
+.menu_button>span:before {top:10px;}
+.menu_button>span:after {top:-10px;}
+.menu_button.click>span {
+		transform:scale3d(0.8, 0.8, 0.8);
+-webkit-transform:scale3d(0.8, 0.8, 0.8);
+}
+
+/*x-cross*/
+.menu_button.x-cross.click>span {background:transparent;}
+.menu_button.x-cross.click>span:before,
+.menu_button.x-cross.click>span:after {top:0;
+		transform-origin:50% 50%;
+-webkit-transform-origin:50% 50%;
+}
+.menu_button.x-cross.click>span:before {
+		transform:rotate3d(0, 0, 1, 45deg);
+-webkit-transform:rotate3d(0, 0, 1, 45deg);
+}
+.menu_button.x-cross.click>span:after {
+		transform:rotate3d(0, 0, 1, -45deg);
+-webkit-transform:rotate3d(0, 0, 1, -45deg);
+}
+
+/*x-butterfly*/
+.menu_button.x-butterfly>span:before,
+.menu_button.x-butterfly>span:after {
+		transform-origin:50% 50%;
+-webkit-transform-origin:50% 50%;
+		transition:top 0.3s 0.6s ease,transform 0.3s ease;
+-webkit-transition:top 0.3s 0.6s ease,-webkit-transform 0.3s ease;
+}
+.menu_button.x-butterfly>span {
+		transition:background 0.3s 0.5s ease;
+-webkit-transition:background 0.3s 0.5s ease;
+}
+.menu_button.x-butterfly.click>span {background:transparent;
+		transition:background 0.3s ease;
+-webkit-transition:background 0.3s ease;
+}
+.menu_button.x-butterfly.click>span:before,
+.menu_button.x-butterfly.click>span:after {top:0;
+		transition:top 0.3s ease,transform 0.3s 0.5s ease;
+-webkit-transition:top 0.3s ease,-webkit-transform 0.3s 0.5s ease;
+}
+.menu_button.x-butterfly.click>span:before {
+		transform:rotate3d(0, 0, 1, 45deg);
+-webkit-transform:rotate3d(0, 0, 1, 45deg);
+}
+.menu_button.x-butterfly.click>span:after {
+		transform:rotate3d(0, 0, 1, -45deg);
+-webkit-transform:rotate3d(0, 0, 1, -45deg);
+}
+
+/*arrow-left*/
+.menu_button.arrow-left>span:before,
+.menu_button.arrow-left>span:after {
+		transform-origin:3px center;
+-webkit-transform-origin:3px center;
+}
+.menu_button.arrow-left.click>span:before,
+.menu_button.arrow-left.click>span:after {top:0;width:55%;}
+.menu_button.arrow-left.click>span:before {
+		transform:rotate3d(0, 0, 1, 45deg);
+-webkit-transform:rotate3d(0, 0, 1, 45deg);
+}
+.menu_button.arrow-left.click>span:after {
+		transform:rotate3d(0, 0, 1, -45deg);
+-webkit-transform:rotate3d(0, 0, 1, -45deg);
+}
+
+
+
+
+
+
